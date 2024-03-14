@@ -261,7 +261,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="imgPlus">
+            <div class="imgPlus" id="showPopupButton">
               <img src="../../assets/icons/img.svg" alt="" />
               <span>+8</span>
               <div class="overlayMb"></div>
@@ -301,7 +301,7 @@
                       alt=""
                     />
                     <div class="overlay"></div>
-                    <span
+                    <span id="showPopupButton2"
                       ><img src="../../assets/icons/img.svg" alt="" />+8</span
                     >
                   </div>
@@ -312,22 +312,38 @@
         </div>
       </div>
     </section>
+    <div class="menuMb">
+      <ul>
+        <li><a href="#" class="menuMbActive">Overview</a></li>
+        <li><a href="#">Describe</a></li>
+        <li><a href="#">Tour guide</a></li>
+        <li><a href="#">details</a></li>
+        <li><a href="#">faqs</a></li>
+      </ul>
+    </div>
     <section class="information">
       <div class="leftInfoHeader">
         <div class="containerHeader">
           <div class="infoTitle">Ha Noi Streets Food Tour</div>
           <div class="evaluate">
-            <div class="stars">
-              <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
-              <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
-              <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
-              <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
-              <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
+            <div class="evaluateFirst">
+              <div class="stars">
+                <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
+                <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
+                <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
+                <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
+                <img src="../../assets/icons/starFood.svg" alt="" srcset="" />
+              </div>
+              <div class="location">
+                <img
+                  src="../../assets/icons/locationFood.svg"
+                  alt=""
+                  srcset=""
+                />
+                <span>Ha Noi capital</span>
+              </div>
             </div>
-            <div class="location">
-              <img src="../../assets/icons/locationFood.svg" alt="" srcset="" />
-              <span>Ha Noi capital</span>
-            </div>
+
             <div class="tag">
               <span>Hanoi in my eyes</span>
             </div>
@@ -423,6 +439,21 @@
               </div>
             </div>
           </div>
+          <div class="videoLeft">
+            <video id="myVideo1">
+              <source
+                src="../../assets/imgs/FIFA ONLINE 4 2023-09-22 00-32-24.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+            <img
+              src="../../assets/icons/ytb.svg"
+              alt=""
+              class="iconYtb1"
+              id="playButton1"
+            />
+          </div>
           <div class="describe">
             <div class="headerDescribe">
               <h3 class="titleDescribe">Describe:</h3>
@@ -439,40 +470,50 @@
           <div class="tourGuide">
             <h3 class="tourGuideTitle">Tour guide:</h3>
             <div class="listTourGuide">
-              <div class="cardTourGuide">
-                <img src="../../assets/imgs/hieuthu2.jpg" alt="" />
-                <div class="cardInfo">
-                  <span>Jun Nguyen</span>
-                  <span
-                    >Blown away by our Tanzania safari, I never expected it to
-                    be that good — it totally exceeded mytations and was all
-                    hassle free. Our guide was absolutely amazing too. Have
-                    re-booked.</span
-                  >
-                </div>
-              </div>
-              <div class="cardTourGuide">
-                <img src="../../assets/imgs/hieuthu2.jpg" alt="" />
-                <div class="cardInfo">
-                  <span>Jun Nguyen</span>
-                  <span
-                    >Blown away by our Tanzania safari, I never expected it to
-                    be that good — it totally exceeded mytations and was all
-                    hassle free. Our guide was absolutely amazing too. Have
-                    re-booked.</span
-                  >
-                </div>
-              </div>
-              <div class="cardTourGuide">
-                <img src="../../assets/imgs/hieuthu2.jpg" alt="" />
-                <div class="cardInfo">
-                  <span>Jun Nguyen</span>
-                  <span
-                    >Blown away by our Tanzania safari, I never expected it to
-                    be that good — it totally exceeded mytations and was all
-                    hassle free. Our guide was absolutely amazing too. Have
-                    re-booked.</span
-                  >
+              <div class="swiperCard">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="cardTourGuide">
+                      <img src="../../assets/imgs/hieuthu2.jpg" alt="" />
+                      <div class="cardInfo">
+                        <span>Jun Nguyen</span>
+                        <span
+                          >Blown away by our Tanzania safari, I never expected
+                          it to be that good — it totally exceeded mytations and
+                          was all hassle free. Our guide was absolutely amazing
+                          too. Have re-booked.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cardTourGuide">
+                      <img src="../../assets/imgs/hieuthu2.jpg" alt="" />
+                      <div class="cardInfo">
+                        <span>Jun Nguyen</span>
+                        <span
+                          >Blown away by our Tanzania safari, I never expected
+                          it to be that good — it totally exceeded mytations and
+                          was all hassle free. Our guide was absolutely amazing
+                          too. Have re-booked.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cardTourGuide">
+                      <img src="../../assets/imgs/hieuthu2.jpg" alt="" />
+                      <div class="cardInfo">
+                        <span>Jun Nguyen</span>
+                        <span
+                          >Blown away by our Tanzania safari, I never expected
+                          it to be that good — it totally exceeded mytations and
+                          was all hassle free. Our guide was absolutely amazing
+                          too. Have re-booked.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -552,12 +593,420 @@
             </div>
           </div>
         </div>
-        <div class="infomationRight">R</div>
+        <div class="infomationRight">
+          <div class="mapHanoi">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29952.902128918355!2d105.83032682206266!3d21.030170259016625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1710391906243!5m2!1svi!2s"
+              style="border: 0"
+              width="100%"
+              id="mapG"
+            ></iframe>
+            <div class="tagGgMap">
+              <img src="../../assets/icons/map.svg" alt="" />
+              <span>GoogleMap</span>
+            </div>
+          </div>
+          <div class="videoRight">
+            <video id="myVideo">
+              <source
+                src="../../assets/imgs/FIFA ONLINE 4 2023-09-22 00-32-24.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+            <img
+              src="../../assets/icons/ytb.svg"
+              alt=""
+              class="iconYtb"
+              id="playButton"
+            />
+          </div>
+          <div class="allButtonRight">
+            <button class="btnRightFirst">$19/PAX</button>
+            <div class="btnUnder">
+              <button class="btnRightSecond">Request Now</button>
+              <button class="btnRightThird">
+                <img src="../../assets/icons/WHATSAPP.svg" alt="" />whatsapp us
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <div class="popUp">
+      <div class="containerPopup">
+        <img
+          src="../../assets/icons/close.svg"
+          alt=""
+          id="hidePopupButton"
+          class="close"
+        />
+        <div class="contentPopup">
+          <div class="headerPopup">
+            <h4>Hanoi food tour</h4>
+            <button>
+              <span>$19 / PAX</span>
+              <span>|</span>
+              <span>request now</span>
+            </button>
+          </div>
+          <div class="mainPopup">
+            <div class="containerSlidePopup1">
+              <div class="swiperPopUp1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-paginationPop">
+                    <div class="swiper-paginationPopm"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="prev-popup">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="61"
+                height="41"
+                viewBox="0 0 61 41"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_682_3273)">
+                  <path
+                    d="M8.00068 20.3893L10.7181 17.6719M8.00068 20.3893L10.7181 23.1067M8.00068 20.3893H40.6094"
+                    stroke="#B5461D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <g filter="url(#filter1_d_682_3273)">
+                  <circle
+                    cx="10.5"
+                    cy="10.5"
+                    r="8.5"
+                    transform="matrix(4.37114e-08 1 1 -4.37114e-08 30 10)"
+                    stroke="#B5461D"
+                    fill="transparent"
+                    stroke-width="4"
+                    shape-rendering="crispEdges"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_682_3273"
+                    x="-3"
+                    y="6.67188"
+                    width="54.6094"
+                    height="27.4336"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_682_3273"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_682_3273"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter1_d_682_3273"
+                    x="20"
+                    y="0"
+                    width="41"
+                    height="41"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_682_3273"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_682_3273"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            <div class="next-popup">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="61"
+                height="41"
+                viewBox="0 0 61 41"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_682_3273)">
+                  <path
+                    d="M8.00068 20.3893L10.7181 17.6719M8.00068 20.3893L10.7181 23.1067M8.00068 20.3893H40.6094"
+                    stroke="#B5461D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <g filter="url(#filter1_d_682_3273)">
+                  <circle
+                    cx="10.5"
+                    cy="10.5"
+                    r="8.5"
+                    transform="matrix(4.37114e-08 1 1 -4.37114e-08 30 10)"
+                    stroke="#B5461D"
+                    stroke-width="4"
+                    fill="transparent"
+                    shape-rendering="crispEdges"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_682_3273"
+                    x="-3"
+                    y="6.67188"
+                    width="54.6094"
+                    height="27.4336"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_682_3273"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_682_3273"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter1_d_682_3273"
+                    x="20"
+                    y="0"
+                    width="41"
+                    height="41"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_682_3273"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_682_3273"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            </div>
+            <div class="containerSlidePopup2">
+              <div class="swiperPopUp2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgPop">
+                      <img
+                      src="../../assets/imgs/Rectangle 34624951.jpg"
+                      alt=""
+                    />
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script>
     const swiper = new Swiper(".swiperleft", {
       loop: true,
@@ -578,7 +1027,7 @@
       spaceBetween: 25,
       breakpoints: {
         0: {
-          slidesPerView: 3.4,
+          slidesPerView: 3.2,
           spaceBetween: 10,
           grid: {
             rows: 1,
@@ -600,10 +1049,34 @@
         },
       },
     });
+    var swiperRight = new Swiper(".swiperCard", {
+      slidesPerView: 2,
+      spaceBetween: 25,
+      breakpoints: {
+        0: {
+          slidesPerView: 1.7,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+      },
+    });
     var swiperBuncha = new Swiper(".swiperBunchaFirst", {
       loop: true,
       slidesPerView: 5,
       spaceBetween: 13,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
     });
     var swiperBunchaSecond = new Swiper(".swiperBunchaSecond", {
       loop: true,
@@ -613,6 +1086,46 @@
         delay: 2500,
         disableOnInteraction: false,
       },
+    });
+    var swiperPopup1 = new Swiper(".swiperPopUp1", {
+      loop:true,
+      spaceBetween:10,
+      pagination: {
+        el: ".swiper-paginationPopm",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".next-popup",
+        prevEl: ".prev-popup",
+      },
+    });
+    var swiperPopup2 = new Swiper(".swiperPopUp2", {
+      slidesPerView: 7,
+      spaceBetween: 10,
+      loop:true,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          direction:"vertical",
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+          direction:"horizontal",
+        },
+        1024:{
+          slidesPerView: 7,
+          spaceBetween: 10,
+        }
+      }
+    });
+    gsap.to(".menuMb", {
+      position: "sticky",
+      top: 0,
+      left: 0,
+      width: "100%",
+      zIndex: 1000,
     });
   </script>
   <script src="foodTour.js"></script>
