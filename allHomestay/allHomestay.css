@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -389,7 +390,7 @@ button {
 #pages li:last-child {
   margin-right: 0;
 }
-#pages .active {
+#pages li.active {
   background-color: #b5461d;
   color: white;
 }

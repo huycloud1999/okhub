@@ -17,7 +17,11 @@ ul {
 a {
   text-decoration: none;
 }
-.container {
+.containerBannerAll {
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
+.conatinerInfo {
   max-width: 87.5rem;
   margin: 0 auto;
 }
@@ -265,15 +269,295 @@ button {
   margin-right: 2%;
   padding-top: 1.5rem;
 }
+.activity .activityTitle {
+  color: #262626;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+  margin-bottom: 0.75rem;
+}
+.activity {
+  margin-bottom: 2rem;
+}
+.tagActivity {
+  display: flex;
+  align-items: center;
+}
+.tagActivityItem {
+  background-color: #f8f8f8;
+  padding: 0.75rem 0.88rem;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 0.75rem;
+}
+.tagActivity .tagActivityItem {
+  margin-right: 0.5rem;
+}
+.tagActivityItem img {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.5rem;
+}
+.tagActivityItem .infoTagActivity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.infoTagActivity .label {
+  color: #6a6a6a;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+  margin-bottom: 0.12rem;
+}
+.infoTagActivity span:last-child {
+  color: #828282;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+}
+.experience {
+  margin-bottom: 2rem;
+}
+.experienceTitle {
+  color: #262626;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+  margin-bottom: 0.75rem;
+}
+.experienceContent {
+  display: flex;
+  justify-content: space-between;
+}
+.experienceContentItem {
+  background-color: #f8f8f8;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  width: 100%;
+  margin-right: 0.75rem;
+}
+.experienceContentItem:last-child {
+  margin-right: 0;
+}
+.exItemLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.exItemLabel img {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.38rem;
+}
+.exItemLabel span {
+  color: #828282;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+}
+.experienceContentItem ul {
+  margin-left: 9%;
+  list-style-type: disc;
+}
+.experienceContentItem ul li {
+  color: #262626;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+  margin-bottom: 0.38rem;
+}
+.experienceContentItem ul li:last-child {
+  margin-bottom: 0;
+}
+.describe .headerDescribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.titleDescribe {
+  color: #262626;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+}
+.headerDescribe img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.describe .description {
+  background-color: #f8f8f8;
+  text-align: left;
+  padding: 0.75rem;
+  color: #6a6a6a;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+  border-radius: 0.75rem;
+}
+.describe {
+  margin-bottom: 2rem;
+}
+.tourGuide {
+  margin-bottom: 2rem;
+}
+.tourGuideTitle {
+  color: #262626;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+  margin-bottom: 0.75rem;
+}
+.listTourGuide {
+  display: flex;
+}
+.cardTourGuide {
+  width: 13.4375rem;
+  height: 13.4375rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-right: 0.75rem;
+}
+.cardTourGuide img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.cardTourGuide .cardInfo {
+  background-color: #e1e1e1;
+  padding-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 94%;
+  height: 14%;
+  position: absolute;
+  border-radius: 0.5rem;
+  top: 83%;
+  left: 3%;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.cardTourGuide .cardInfo span:first-child {
+  color: #6a6a6a;
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+  padding-bottom: 4rem;
+}
+.cardTourGuide .cardInfo span:last-child {
+  color: #727272;
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.00188rem;
+}
+.cardTourGuide:hover .cardInfo {
+  height: 94%;
+  top: 3%;
+  transition: 0.5s ease-in-out;
+}
+.cardTourGuide:hover .cardInfo span:first-child {
+  border-bottom: 0.1rem solid #c5c5c5;
+  width: 94%;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
 .infomationRight {
   width: 30%;
+}
+.cuisineTitle {
+  color: #262626;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+  margin-bottom: 0.75rem;
+}
+.sliderFirst {
+  border-radius: 0.75rem;
+  background: #f8f8f8;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.swiperBunchaFirst {
+  overflow: hidden;
+}
+.bunchaItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+.bunchaItem:hover {
+  background: #ffe998;
+  box-shadow: 0px 3px 20px 0px rgba(255, 217, 0, 0.04),
+    0px 4px 20px 0px rgba(0, 0, 0, 0.04);
+  transition: 0.5s ease-in-out;
+}
+.bunchaItem img {
+  width: 4.27081rem;
+  height: 2.5625rem;
+  background-color: transparent;
+  margin-right: 0.32rem;
+  object-fit: cover;
+}
+.bunchaItem span {
+  color: #262626;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+}
+.sliderSecond {
+  overflow: hidden;
+}
+.swiperBunchaSecond .swiper-slide {
+  border-radius: 0.5rem;
+}
+.swiperBunchaSecond .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 2vw;
   }
-  .container {
+  .containerBannerAll {
     max-width: 100% !important;
     width: 100%;
     padding: 1rem;
@@ -289,7 +573,7 @@ button {
   html {
     font-size: 4.267vw;
   }
-  .banner .container {
+  .banner .containerBanner {
     max-width: none;
     padding: 0;
     display: flex;
