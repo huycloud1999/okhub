@@ -304,6 +304,171 @@ a {
   padding: 0.38rem;
   margin-top: 0.5rem;
 }
+.selectNationaly {
+  width: 24%;
+  padding: 0.62rem 0.75rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+}
+.contactFCT input::placeholder {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00219rem;
+}
+.selectNationaly .labelSelectNational {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00219rem;
+}
+.NationlityChild {
+  position: absolute;
+  opacity: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  top: 110%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 0.73206rem 0.87848rem;
+}
+.NationlityChild span {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.53734rem */
+  letter-spacing: 0.00256rem;
+  margin-bottom: 0.5rem;
+}
+.NationlityChild span:last-child {
+  margin-bottom: 0;
+}
+.NationlityChild span:hover {
+  color: #262626;
+}
+/* AirportArrival */
+.selectAirportArrival {
+  width: 49%;
+  padding: 0.62rem 0.75rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+}
+
+.selectAirportArrival .labelSelectArrival {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00219rem;
+}
+.AirportArrivalChild {
+  position: absolute;
+  opacity: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  top: 0;
+  left: 101%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 0.73206rem 0.87848rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: 99;
+}
+.AirportArrivalChild span {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.53734rem */
+  letter-spacing: 0.00256rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.09rem solid #c1c1c1;
+  margin-bottom: 0.5rem;
+}
+.AirportArrivalChild span:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.AirportArrivalChild span:hover {
+  color: #262626;
+}
+/* endAirportArrival */
+.selectreturnlDateFCT {
+  width: 49%;
+  padding: 0.62rem 0.75rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+}
+
+.selectreturnlDateFCT .labelreturnlDateFCT {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00219rem;
+}
+.returnlDateFCTChild {
+  position: absolute;
+  opacity: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  top: 110%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 0.73206rem 0.87848rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: 999;
+}
+.returnlDateFCTChild span {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.53734rem */
+  letter-spacing: 0.00256rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.09rem solid #c1c1c1;
+  padding-bottom: 0.5rem;
+}
+.returnlDateFCTChild span:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.returnlDateFCTChild span:hover {
+  color: #262626;
+}
+/* returnDate */
 .messageLeftFCTTitle {
   color: #6a6a6a;
   font-size: 1rem;
@@ -491,6 +656,14 @@ a {
   background-color: #f8f8f8;
   border-radius: 1rem;
 }
+.pickTypeTourFCTItem span:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pickTypeTourFCTItem span:last-child img {
+  margin-right: 0.5rem;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .formCTMain {
     flex-direction: column;
@@ -505,11 +678,215 @@ a {
     width: 100%;
   }
 }
+/* datepicker */
+.dateReturnPicker {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  padding: 0.62rem 0.75rem;
+  position: relative;
+}
+#dateInputReturn {
+  display: flex;
+  justify-content: space-between;
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  width: 100%;
+  letter-spacing: 0.00219rem;
+}
+.calendarDateInputReturn {
+  background-color: white;
+  border-radius: 10px;
+  top: 110%;
+  left: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+.headerCalendarDateInputReturn {
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#prevBtnCDIReturn,
+#nextBtnCDIReturn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#monthYearCDIReturn {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.daysCDIReturn {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.dayCDIReturn {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dayCDIReturn.current {
+  background-color: #3498db;
+  color: white;
+}
+
+.dayCDIReturn.selected {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#dateInputReturn {
+  display: flex;
+  justify-content: space-between;
+  color: #828282;
+  font-size: 0.7rem;
+  font-style: normal;
+  line-height: 150%;
+  align-items: center;
+}
+#dateInputValueReturn {
+  width: 100%;
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+}
+/* datearival */
+.dateArrivalPicker {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  padding: 0.62rem 0.75rem;
+  position: relative;
+}
+#dateInputArrival {
+  display: flex;
+  justify-content: space-between;
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  width: 100%;
+  letter-spacing: 0.00219rem;
+}
+.calendarDateInputArrival {
+  background-color: white;
+  border-radius: 10px;
+  top: 110%;
+  left: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+.headerCalendarDateInputArrival {
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#prevBtnCDIArrival,
+#nextBtnCDIArrival {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#monthYearCDIArrival {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.daysCDIArrival {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.dayCDIArrival {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dayCDIArrival.current {
+  background-color: #3498db;
+  color: white;
+}
+
+.dayCDIArrival.selected {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#dateInputArrival {
+  display: flex;
+  justify-content: space-between;
+  color: #828282;
+  font-size: 0.7rem;
+  font-style: normal;
+  line-height: 150%;
+  align-items: center;
+}
+#dateInputValueArrival {
+  width: 100%;
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+}
 @media (max-width: 767px) {
   .titleForm {
     font-size: 1.5rem !important;
     padding: 1rem;
     margin-bottom: 0 !important;
+  }
+  .selectNationaly {
+    width: 100%;
+    margin-top: 0.5rem;
   }
   .formCTMain {
     flex-direction: column;

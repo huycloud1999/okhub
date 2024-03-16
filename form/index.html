@@ -41,31 +41,85 @@
               <input type="text" placeholder="Full name*" />
               <input type="text" placeholder="Tel/WhatsApp*" />
               <input type="text" placeholder="Your email*" />
-              <select name="detail-form-pickup-nationality">
-                <option value="">Nationality*</option>
-                <option value="Danang">Danang</option>
-                <option value="Ho Chi Minh">Ho Chi Minh</option>
-              </select>
+              <div class="selectNationaly">
+                <span class="labelSelectNational">Nationality*</span>
+                <img src="../assets/icons/Caret_Down_MD.svg" alt="" />
+                <div class="NationlityChild">
+                  <span>Ha noi</span>
+                  <span>Ha noi</span>
+                </div>
+              </div>
             </div>
 
             <div class="travelTotalFCT">
               <div class="travelFCT">
                 <span class="labelRravelTotalFCT">Travel time in Vietnam</span>
                 <div class="arrivalDateFCT">
-                  <input type="date" id="dateInput" />
-                  <select name="detail-form-pickup-airport-arrival">
-                    <option value="">Airport arrival*</option>
-                    <option value="Danang">Danang</option>
-                    <option value="Ho Chi Minh">Ho Chi Minh</option>
-                  </select>
+                  <div class="dateArrivalPicker" id="dateArrivalPicker">
+                    <div id="dateInputArrival">
+                      <div id="dateInputValueArrival">Arrival Date</div>
+                      <img
+                        src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/Calendar-1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="calendarDateInputArrival"
+                      id="calendarDateArrival"
+                    >
+                      <div class="headerCalendarDateInputArrival">
+                        <button id="prevBtnCDIArrival">&lt;</button>
+                        <h2 id="monthYearCDIArrival">Month Year</h2>
+                        <button id="nextBtnCDIArrival">&gt;</button>
+                      </div>
+                      <div
+                        class="daysCDIArrival"
+                        id="daysContainerCDIArrival"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="selectAirportArrival">
+                    <span class="labelSelectArrival">Airport arrival</span>
+                    <img src="../assets/icons/Caret_Down_MD.svg" alt="" />
+                    <div class="AirportArrivalChild">
+                      <span>Ha noi 2</span>
+                      <span>Ha noi 2</span>
+                    </div>
+                  </div>
                 </div>
                 <div class="returnlDateFCT">
-                  <input type="date" />
-                  <select name="detail-form-pickup-airport-return">
-                    <option value="">Airport return*</option>
-                    <option value="Danang">Danang</option>
-                    <option value="Ho Chi Minh">Ho Chi Minh</option>
-                  </select>
+                  <div class="dateReturnPicker" id="dateReturnPicker">
+                    <div id="dateInputReturn">
+                      <div id="dateInputValueReturn">Go Home Date</div>
+                      <img
+                        src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/Calendar-1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="calendarDateInputReturn"
+                      id="calendarDateReturn"
+                    >
+                      <div class="headerCalendarDateInputReturn">
+                        <button id="prevBtnCDIReturn">&lt;</button>
+                        <h2 id="monthYearCDIReturn">Month Year</h2>
+                        <button id="nextBtnCDIReturn">&gt;</button>
+                      </div>
+                      <div
+                        class="daysCDIReturn"
+                        id="daysContainerCDIReturn"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="selectreturnlDateFCT">
+                    <span class="labelreturnlDateFCT">Airport return</span>
+                    <img src="../assets/icons/Caret_Down_MD.svg" alt="" />
+                    <div class="returnlDateFCTChild" id="returnlDateFCTChild">
+                      <span>Ha noi</span>
+                      <span>Ha noi</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="totalFCT">
@@ -180,7 +234,12 @@
                           <input type="checkbox" name="" id="" />
                           <img src="../assets/imgs/bgItme.png" alt="" />
                         </div>
-                        <span>Ha Giang</span>
+                        <span
+                          ><img
+                            src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/moto.svg"
+                            alt=""
+                          />Ha Giang</span
+                        >
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -189,7 +248,13 @@
                           <input type="checkbox" name="" id="" />
                           <img src="../assets/imgs/bgItme.png" alt="" />
                         </div>
-                        <span>Ha Giang</span>
+                        <span
+                          ><img
+                            src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/moto.svg"
+                            alt=""
+                          />
+                          Ha Giang</span
+                        >
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -198,7 +263,12 @@
                           <input type="checkbox" name="" id="" />
                           <img src="../assets/imgs/bgItme.png" alt="" />
                         </div>
-                        <span>Ha Giang</span>
+                        <span
+                          ><img
+                            src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/moto.svg"
+                            alt=""
+                          />Ha Giang</span
+                        >
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -207,7 +277,12 @@
                           <input type="checkbox" name="" id="" />
                           <img src="../assets/imgs/bgItme.png" alt="" />
                         </div>
-                        <span>Ha Giang</span>
+                        <span
+                          ><img
+                            src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/moto.svg"
+                            alt=""
+                          />Ha Giang</span
+                        >
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -216,7 +291,12 @@
                           <input type="checkbox" name="" id="" />
                           <img src="../assets/imgs/bgItme.png" alt="" />
                         </div>
-                        <span>Ha Giang</span>
+                        <span
+                          ><img
+                            src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/moto.svg"
+                            alt=""
+                          />Ha Giang</span
+                        >
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -225,7 +305,12 @@
                           <input type="checkbox" name="" id="" />
                           <img src="../assets/imgs/bgItme.png" alt="" />
                         </div>
-                        <span>Ha Giang</span>
+                        <span
+                          ><img
+                            src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/moto.svg"
+                            alt=""
+                          />Ha Giang</span
+                        >
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -234,7 +319,12 @@
                           <input type="checkbox" name="" id="" />
                           <img src="../assets/imgs/bgItme.png" alt="" />
                         </div>
-                        <span>Ha Giang</span>
+                        <span
+                          ><img
+                            src="https://cheers-hostel.okhub-tech.com/wp-content/uploads/2024/03/moto.svg"
+                            alt=""
+                          />Ha Giang</span
+                        >
                       </div>
                     </div>
                   </div>
