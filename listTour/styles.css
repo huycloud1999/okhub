@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
 .cheerTourBanner img {
   width: 100%;
 }
@@ -15,26 +23,59 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -3;
+  z-index: -10;
+  object-fit: cover;
 }
 .cloudZoomCheerTour {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
+  opacity: 0.9;
   bottom: 0;
-  z-index: -2;
+  z-index: -3;
+  animation: zoom-in-zoom-out 20s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 .containerCloudSlide {
   position: absolute;
-  bottom: 0;
+  opacity: 1;
+  bottom: -2rem;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   width: 100%;
   height: 100%;
 }
 .swiperBannerCheerTour {
   overflow: hidden;
+  height: 100%;
+}
+.titleBannerCheerTour {
+  display: inline-block;
+  color: #fff;
+  width: 36.3104rem;
+  padding: 1rem 6rem;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+  position: absolute;
+  z-index: 100;
+  left: 34%;
+  bottom: 23%;
 }
 .swiperBannerCheerTour .swiper-slide {
   width: 100%;
@@ -47,4 +88,852 @@
 }
 .swiperBannerCheerTour .cheerTourSecond img {
   transform: rotateY(180deg);
+}
+.linkBannerCheerTour {
+  display: flex;
+  position: absolute;
+  z-index: 99999;
+  left: 4%;
+  bottom: 10%;
+  align-items: center;
+}
+.cheerTourLinkHome {
+  display: flex;
+  align-items: center;
+}
+.cheerTourLinkHome img {
+  width: 1rem;
+  height: 1rem;
+}
+.cheerTourLinkHome span {
+  color: #c5c5c5;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+  margin-right: 0.5rem;
+}
+.linksNothingCheerTour {
+  width: 0.5875rem !important;
+  height: 0.375rem;
+  margin-right: 0.5rem;
+}
+.linkBannerCheerTour a:last-child {
+  color: #262626;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+}
+.menuCheerTourList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filterTravelStyleCT {
+  position: relative;
+  cursor: pointer;
+}
+.filterTravelDestinationCT {
+  position: relative;
+  cursor: pointer;
+}
+.menuChildTravelStyle {
+  position: absolute;
+  opacity: 0;
+  top: 120%;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 999999999;
+}
+.menuCheerTourListTopMb {
+  display: flex;
+  align-items: center;
+}
+.menuChildDestinations {
+  position: absolute;
+  background-color: #f2f2f2;
+  opacity: 0;
+  top: 120%;
+  z-index: 9999999999;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+.menuChildDestinations {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.04),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.menuChildDestinations a {
+  color: #262626;
+  font-family: Heavitas;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.menuChildDestinations a:hover {
+  color: #b5461d;
+}
+.menuChildDestinations a:last-child {
+  margin-bottom: 0;
+}
+.menuCheerTourList .allTourListCT {
+  border-radius: 0.5rem;
+  background: #b5461d;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.menuChildTravelStyle {
+  display: flex;
+  background-color: #f2f2f2;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.04),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+}
+.menuChildTravelStyle .menuChildTravelStyleItem img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.menuChildTravelStyle .menuChildTravelStyleItem:hover span {
+  color: #b5461d;
+}
+.menuChildTravelStyle .menuChildTravelStyleItem span {
+  color: #262626;
+  text-transform: uppercase;
+  font-family: Heavitas;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+}
+.menuChildTravelStyle {
+  padding: 1.25rem;
+}
+.menuChildTravelStyle .menuChildTravelStyleItem:last-child {
+  margin-bottom: 0;
+}
+.menuChildTravelStyle .menuChildTravelStyleItem {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+.menuCheerTourList .allTourListCT img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.75rem;
+}
+.menuCheerTourList .allTourListCT span {
+  color: #fff;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+}
+.filterTravelStyleCT .labelFilterTravelStyle img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.75rem;
+}
+
+.filterTravelDestinationCT .lablefilterTravelDes img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.75rem;
+}
+.filterTravelStyleCT .labelFilterTravelStyle span,
+.filterTravelDestinationCT .lablefilterTravelDes span {
+  text-transform: uppercase;
+  color: #727272;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+}
+.filterTravelDestinationCT,
+.filterTravelStyleCT {
+  width: 17.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  background: #f2f2f2;
+  padding: 0.75rem 1rem;
+  margin-right: 1rem;
+}
+.labelFilterTravelStyle,
+.lablefilterTravelDes {
+  display: flex;
+  align-items: center;
+}
+.searchboxCheerTour input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  color: #727272;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+}
+.searchboxCheerTour {
+  width: 13.0625rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  background: #f2f2f2;
+}
+/* item */
+.listCheerTourContentItem .swiper-slide {
+  position: relative;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  box-shadow: 0px 0.25rem 1rem 0px rgba(0, 0, 0, 0.04),
+    0px 0px 1.25rem 0px rgba(0, 0, 0, 0.06);
+  transition: all 0.5s;
+}
+
+.listCheerTourContentItem .swiper-slide .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.75rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.listCheerTourContentItem .swiper-slide .tour-content {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
+.listCheerTourContentItem .swiper-slide-img {
+  width: 100%;
+  border-radius: 0.75em !important;
+  height: 12.4375rem;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.listCheerTourContentItem .swiper-slide-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.listCheerTourContentItem .tour-title {
+  color: #262626;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.0125rem;
+  min-height: 2.375rem;
+  margin-bottom: 0.25rem;
+}
+
+.listCheerTourContentItem .dashLine {
+  width: 100%;
+  height: 0.125rem;
+  object-fit: cover;
+}
+
+.listCheerTourContentItem .tour-info {
+  padding: 1rem 0 0;
+}
+.listCheerTourContentItem {
+  width: 20.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.37313rem;
+  box-shadow: 0px 2.985px 23.881px 0px rgba(92, 1, 1, 0.04),
+    0px 0px 20px 0px rgba(181, 70, 29, 0.08);
+}
+.listCheerTourContentItem .tour-info-item {
+  display: flex;
+  align-items: center;
+}
+.listCheerTourContentItem .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.75rem;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.listCheerTourContentItem .tour-info-item:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.listCheerTourContentItem .tour-info-item img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  margin-right: 0.38rem;
+}
+
+.listCheerTourContentItem .tour-info-item span {
+  font-size: 0.875rem;
+  line-height: 120%;
+  letter-spacing: 0.00875rem;
+}
+
+.listCheerTourContentItem .tour-info-item span:nth-child(2) {
+  color: #b5461d;
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+.listCheerTourContentItem .tour-info-item span:nth-child(3) {
+  color: #6a6a6a;
+  font-weight: 500;
+}
+
+.listCheerTourContentItem .tour-bottom-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.listCheerTourContentItem .tour-bottom-cont .tour-prices {
+  display: flex;
+  align-items: center;
+}
+.listCheerTourContentItem .tour-bottom-cont .tour-prices .actual-price {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+  color: #b5461d;
+  margin-right: 0.5rem;
+}
+
+.listCheerTourContentItem .tour-bottom-cont .tour-prices .fake-price {
+  color: #6a6a6a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.03125rem;
+  text-decoration: line-through;
+}
+.listCheerTourContentItem {
+  position: relative;
+}
+.listCheerTourContentItem .tour-bottom-cont .tour-btn {
+  display: flex;
+  height: 2.75rem;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+.listCheerTourContent {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* hover */
+
+.listCheerTourContentItem:hover {
+  box-shadow: none;
+}
+
+.listCheerTourContentItem:hover .overlay {
+  opacity: 1;
+}
+
+.listCheerTourContentItem:hover .swiper-slide-img img {
+  transform: scale(1.1);
+}
+
+.listCheerTourContentItem:hover .tour-btn {
+  background: #b5461d;
+  color: #fff;
+}
+.listCheerTourPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listCheerTourPage .pageCTleft {
+  transform: rotateY(180deg);
+  background-color: #ffc800;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99rem;
+  margin-right: 1.5rem;
+}
+.currentPage {
+  background-color: #b5461d;
+  color: #fff !important;
+  border-radius: 50%;
+}
+.listCheerTourPage .pageCTright {
+  background-color: #ffc800;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99rem;
+  margin-left: 1.5rem;
+}
+.listCheerTourPage a {
+  margin-right: 0.25rem;
+  color: #262626;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Kanit;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: 0.00875rem;
+}
+/* start with cheer tour */
+.startWCheerTour {
+  margin-top: 6.15rem;
+}
+.startWCheerTourContainer {
+  display: flex;
+}
+.titleStartWCTMb {
+  display: none;
+}
+.leftStartWCheerTour {
+  width: 49%;
+  margin-right: 15%;
+}
+.titleStartWCT {
+  display: flex;
+  flex-direction: column;
+}
+.containerBtnSWCT {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.containerBtnSWCT a:first-child {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #b5461d;
+  color: white;
+  margin-right: 1rem;
+}
+.containerBtnSWCT a:last-child {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #b5461d;
+  background: transparent;
+  color: #b5461d;
+  margin-right: 1rem;
+}
+.titleStartWCT span:first-child {
+  color: #b34b1e;
+  font-family: Heavitas;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 1.25rem */
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+.titleStartWCT span:last-child {
+  color: #b5461d;
+  font-family: Heavitas;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 2rem */
+  text-transform: uppercase;
+}
+.swiperSTWCT {
+  width: 100%;
+  height: 100%;
+}
+.startWCheerTourSlide {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2.5rem;
+}
+
+.rightStartWCheerTour img {
+  width: 100%;
+  height: 100%;
+}
+.containerTagSTWCT {
+  width: 9.30413rem;
+  height: 9.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiperSTWCT .swiper-slide .containerTagSTWCT span {
+  color: #fff0ea;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.00875rem;
+  text-align: center;
+}
+.circletagSWCT {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.tagSWCT {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  left: 0;
+}
+.desSTWCT {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.desSTWCT span {
+  color: #454545;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+}
+.desSTWCT .desSTWCTTop {
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .bgCheerTourBannerMb {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    object-fit: cover;
+    display: block;
+  }
+  .titleBannerCheerTour {
+    left: 14%;
+  }
+  .bgCheerTourBannerPc {
+    display: none;
+  }
+  .containerCheerTourBanner {
+    height: 18rem;
+  }
+  .containerCloudSlide {
+    bottom: 0rem;
+  }
+
+  .titleBannerCheerTour {
+    color: #6a6a6a;
+    text-align: center;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 0.75rem */
+    letter-spacing: 0.00781rem;
+    left: 16%;
+  }
+
+  .containerCloudSlide .swiper-wrapper {
+    height: 63%;
+  }
+  .titleBannerCheerTour {
+    z-index: 9999;
+    width: 15rem;
+    padding: 0;
+  }
+  .listCheerTourContent {
+    grid-template-columns: 1fr;
+  }
+  .menuCheerTourList {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .filterTravelDestinationCT {
+    margin-right: 0;
+  }
+  .menuCheerTourListTopMb {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .searchboxCheerTour {
+    width: 100%;
+  }
+  .menuCheerTourList .allTourListCT {
+    margin-right: 0.5rem;
+    padding: 0.6875rem 0.625rem;
+  }
+  .menuCheerTourList .allTourListCT img {
+    display: none;
+  }
+  .menuCheerTourList .allTourListCT span {
+    white-space: nowrap;
+    font-size: 0.625rem;
+  }
+  .filterTravelStyleCT {
+    margin-right: 0.5rem;
+  }
+  .filterTravelStyleCT .labelFilterTravelStyle img {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.25rem;
+  }
+  .filterTravelDestinationCT .lablefilterTravelDes img {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.25rem;
+  }
+  .filterTravelDestinationCT,
+  .filterTravelStyleCT {
+    padding: 0.6875rem 0.625rem;
+    width: 100%;
+  }
+  .filterTravelStyleCT .labelFilterTravelStyle span,
+  .filterTravelDestinationCT .lablefilterTravelDes span {
+    font-size: 0.625rem;
+    white-space: nowrap;
+  }
+  .searchboxCheerTour {
+    padding: 0.6875rem 0.5rem;
+    font-size: 0.625rem;
+  }
+  .searchboxCheerTour input {
+    font-size: 0.625rem;
+  }
+  .downFilterIcon {
+    width: 0.39419rem;
+    height: 0.625rem;
+  }
+  .menuChildTravelStyle {
+    padding: 1rem 0.5rem;
+  }
+  .menuChildTravelStyle .menuChildTravelStyleItem img {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.25rem;
+  }
+  .menuChildTravelStyle .menuChildTravelStyleItem span {
+    font-size: 0.625rem;
+  }
+  .menuChildDestinations a {
+    font-size: 0.625rem;
+  }
+  .listCheerTourContentItem {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  .startWCheerTourContainer {
+    flex-direction: column-reverse;
+  }
+  .leftStartWCheerTour {
+    width: 100%;
+  }
+  .titleStartWCT {
+    display: none;
+  }
+  .titleStartWCTMb {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .startWCheerTourContainer {
+    padding: 0;
+  }
+  .titleStartWCTMb span:first-child {
+    color: #b34b1e;
+    font-family: Heavitas;
+    font-size: 0.87848rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 1.25rem */
+    margin-bottom: 0.75rem;
+  }
+  .titleStartWCTMb span:last-child {
+    color: #b5461d;
+    font-family: Heavitas;
+    font-size: 1.75695rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 2rem */
+  }
+  .circletagSWCT {
+    display: none;
+  }
+  .tagSWCT {
+    display: block;
+  }
+  .startWCheerTour {
+    margin-top: 1rem;
+  }
+  .containerTagSTWCT {
+    width: 100%;
+    height: 6rem;
+  }
+  .rightStartWCheerTour {
+    padding: 0 1rem;
+  }
+  .desSTWCT {
+    padding: 0 1rem;
+  }
+  .containerBtnSWCT {
+    width: 100%;
+    padding: 0 3%;
+  }
+  .containerBtnSWCT a:first-child {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    justify-content: center;
+    padding: 0.625rem 1.25rem;
+    width: 47%;
+    margin-right: 6%;
+  }
+  .containerBtnSWCT a:last-child {
+    width: 47%;
+    display: flex;
+    padding: 0.625rem 1.25rem;
+    margin-right: 0;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menuCheerTourList {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .filterTravelDestinationCT {
+    margin-right: 0;
+  }
+  .menuCheerTourListTopMb {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .searchboxCheerTour {
+    width: 100%;
+  }
+  .titleBannerCheerTour {
+    left: 14%;
+  }
+  .containerCheerTourBanner {
+    height: 14rem;
+  }
+  .titleBannerCheerTour {
+    z-index: 9999;
+    bottom: 10%;
+  }
+  .linkBannerCheerTour {
+    bottom: 2%;
+  }
+  .containerCloudSlide {
+    bottom: -1rem;
+  }
+  .listCheerTourContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .listCheerTourContentItem {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  .startWCheerTourContainer {
+    flex-direction: column-reverse;
+  }
+  .leftStartWCheerTour {
+    width: 100%;
+  }
+  .titleStartWCT {
+    display: none;
+  }
+  .titleStartWCTMb {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .startWCheerTourContainer {
+    padding: 1rem;
+  }
+  .titleStartWCTMb span:first-child {
+    color: #b34b1e;
+    font-family: Heavitas;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 1.25rem */
+    margin-bottom: 0.75rem;
+  }
+  .titleStartWCTMb span:last-child {
+    color: #b5461d;
+    font-family: Heavitas;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 2rem */
+  }
 }

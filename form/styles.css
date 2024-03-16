@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.linksformCustomize {
+  display: flex;
+  align-items: center;
+}
+.linksformCustomize a:first-child img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+.linksformCustomize a:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.linksformCustomize a:first-child span {
+  color: #c5c5c5;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+}
+.linksformCustomize .linksNothingFC {
+  width: 0.575rem;
+  height: 0.575rem;
+  margin-right: 0.5rem;
+}
+.linksformCustomize a:last-child {
+  color: #262626;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+}
+.formCustomizeContent {
+  margin-top: 3rem;
+}
+.formCustomizeContent .titleForm {
+  color: #b5461d;
+  font-size: 2.34261rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 2.81113rem */
+  margin-bottom: 1.68rem;
+}
+.titleFormMainLeftCT span:last-child,
+.titleFormMainRightCT span:last-child {
+  display: none;
+}
+.formCTMain {
+  display: flex;
+  justify-content: space-between;
+}
+.formCTMain .formCustomizeContentLeft {
+  width: 57%;
+}
+.formCTMain .formCustomizeContentRight {
+  width: 41%;
+}
+.contactFCT {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleFormMainLeftCT {
+  margin-bottom: 0.7rem;
+}
+.titleFormMainLeftCT span {
+  color: #6a6a6a;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+}
+.contactFCT input {
+  width: 24%;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+  padding: 0.62rem 0.75rem;
+  border-radius: 0.5rem;
+  background: #f8f8f8;
+  border: none;
+  outline: none;
+}
+.contactFCT select {
+  width: 24%;
+  outline: none;
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+  padding: 0.72rem 0.75rem;
+  border-radius: 0.5rem;
+  background: #f8f8f8;
+  border: none;
+}
+.contactFCT {
+  margin-bottom: 1.5rem;
+}
+.labelRravelTotalFCT {
+  color: #6a6a6a;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+  margin-bottom: 0.25rem;
+}
+.agePickerAdultsFCT span:first-child,
+.agePickerChildFCT span:first-child {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+}
+.travelFCT {
+  width: 49%;
+}
+.totalFCT {
+  width: 49%;
+}
+.travelTotalFCT select {
+  width: 24%;
+  outline: none;
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+  padding: 0.72rem 0.75rem;
+  border-radius: 0.5rem;
+  background: #f8f8f8;
+  border: none;
+  width: 49%;
+}
+.agePickerFuntion {
+  display: flex;
+  align-items: center;
+}
+.agePickerFuntion button {
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  font-size: 1.25rem;
+  color: #a9a9a9;
+}
+.agePickerFuntion button:first-child {
+  margin-right: 0.75rem;
+}
+.agePickerFuntion button:last-child {
+  margin-left: 0.75rem;
+}
+.agePickerFuntion span {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00875rem;
+}
+.travelFCT input[type="date"] {
+  color: #a9a9a9;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+  padding: 0.62rem 0.75rem;
+  border-radius: 0.5rem;
+  background: #f8f8f8;
+  border: none;
+  width: 49%;
+  outline: none;
+}
+.travelTotalFCT {
+  display: flex;
+  justify-content: space-between;
+}
+.arrivalDateFCT {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.returnlDateFCT {
+  display: flex;
+  justify-content: space-between;
+}
+.agePickerAdultsFCT,
+.agePickerChildFCT {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 0.75rem;
+}
+.labelRravelTotalFCT {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.labelRravelTotalFCT2 {
+  margin-bottom: 0.2rem;
+}
+.labelRravelTotalFCT .quantityPax {
+  color: #fff;
+  background-color: #e8b600;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+  padding: 0.11rem 3rem;
+  border-radius: 99rem;
+}
+.totalContentFCT {
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  padding: 0.42rem 0.75rem;
+}
+.swiperPickDesFCT {
+  overflow: hidden;
+}
+
+.pickDestinationFCT {
+  margin-top: 1, 5rem;
+}
+.pickDestinationFCT .titlePickDestinationFCT {
+  margin-bottom: 0.75rem;
+  color: #6a6a6a;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+}
+.swiperPickDestinationFCT {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background: #f8f8f8;
+}
+.pickDesFCTItem {
+  width: 100%;
+}
+.pickDesFCTItemImgContainer {
+  position: relative;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 5.62rem;
+}
+.pickDesFCTItemImgContainer img {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pickDesFCTItemImgContainer input {
+  width: 1rem;
+  height: 1rem;
+  top: 5%;
+  left: 5%;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  position: absolute;
+  accent-color: #ffe895;
+}
+.pickDesFCTItem span:last-child {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: #262626;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+  padding: 0.38rem;
+  margin-top: 0.5rem;
+}
+.messageLeftFCTTitle {
+  color: #6a6a6a;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+  border: none;
+}
+.messageLeftFCT {
+  margin-top: 2.5rem;
+}
+.messageLeftFCT textarea {
+  margin-top: 0.5rem;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #a9a9a9;
+  background: #f8f8f8;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.00219rem;
+}
+.pickDesFCTItemImgContainer input[type="checkbox"]:checked + span {
+  color: yellow !important;
+}
+.pickDestinationFCT {
+  margin-top: 1.5rem;
+}
+/* pick type */
+
+.pickTypeTourFCT {
+  margin-top: 1.5rem;
+}
+.pickTypeTourFCT .titlePickTypeTourFCT {
+  margin-bottom: 0.75rem;
+  color: #6a6a6a;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+}
+.swiperPickTypeTourFCTAll {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background: #f8f8f8;
+}
+.pickTypeTourFCTItem {
+  width: 100%;
+}
+.swiperPickTypeTourFCT {
+  overflow: hidden;
+}
+.pickTypeTourFCTItemImgContainer {
+  position: relative;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 5.62rem;
+}
+.pickTypeTourFCTItemImgContainer img {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pickTypeTourFCTItemImgContainer input {
+  width: 1rem;
+  height: 1rem;
+  top: 5%;
+  left: 5%;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  position: absolute;
+}
+.pickTypeTourFCTItem span:last-child {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: #262626;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 0.9rem */
+  letter-spacing: 0.00375rem;
+  padding: 0.38rem;
+  margin-top: 0.5rem;
+}
+.pickTypeTourFCTItemImgContainer input[type="checkbox"]:checked + span {
+  color: yellow !important;
+}
+/* right */
+.formCustomizeContentRight table th {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(46, 46, 46, 1);
+}
+.formCustomizeContentRight table {
+  background: rgba(248, 253, 255, 1);
+  border: 1px solid rgba(40, 124, 0, 0.14);
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+}
+.formCustomizeContentRight table th,
+.formCustomizeContentRight table td {
+  padding: 0.625rem 1rem;
+}
+.formCustomizeContentRight table span {
+  color: #828282;
+  font-size: 0.87848rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.05417rem */
+  letter-spacing: 0.00878rem;
+}
+.formCustomizeContentRight table strong {
+  color: black !important;
+  font-size: 0.87848rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.05417rem */
+  letter-spacing: 0.00878rem;
+}
+.formCustomizeContentRight table tr:not(:last-child) th,
+.formCustomizeContentRight table tr:not(:last-child) td {
+  border-bottom: 0.5px solid rgba(238, 238, 238, 1);
+}
+.formCustomizeContentRight table th {
+  width: 12.1875rem;
+  border-right: 0.5px solid rgba(238, 238, 238, 1);
+}
+.rightFCRbuttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+.rightFCRbuttons a {
+  width: 49%;
+  padding: 0.73rem;
+  display: flex;
+  border-radius: 0.58565rem;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 1.02489rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.22987rem */
+  text-transform: uppercase;
+}
+.rightFCRbuttons a:first-child {
+  background-color: #b5461d;
+  color: white;
+}
+.rightFCRbuttons a:last-child {
+  background: #f0f0f0;
+  color: #262626;
+}
+.rightFCRbuttons a:last-child img {
+  width: 1.46413rem;
+  height: 1.4642rem;
+  margin-right: 0.88rem;
+}
+.noteRFCT {
+  color: #727272;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0.00219rem;
+  padding: 0.75rem;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .formCTMain {
+    flex-direction: column;
+  }
+  .formCustomizeContentLeft {
+    width: 100% !important;
+  }
+  .formCustomizeContentRight {
+    width: 100% !important;
+  }
+  .formCustomizeContentRight table {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .titleForm {
+    font-size: 1.5rem !important;
+    padding: 1rem;
+    margin-bottom: 0 !important;
+  }
+  .formCTMain {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .formCustomizeContentLeft {
+    width: 100% !important;
+  }
+  .formCustomizeContentRight {
+    width: 100% !important;
+  }
+  .formCustomizeContentRight table {
+    width: 100%;
+  }
+  .contactFCT {
+    flex-direction: column;
+  }
+  .contactFCT input {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .contactFCT select {
+    width: 100%;
+  }
+  .travelTotalFCT {
+    flex-direction: column;
+  }
+  .travelFCT {
+    width: 100%;
+  }
+  .totalFCT {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
